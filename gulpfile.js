@@ -5,7 +5,7 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    cssmin = require('gulp-cssmin');
+    cssmin = require('gulp-cssmin'); 
 
 gulp.task('sass', function() {
    return gulp.src('app/scss/**/*.scss')
