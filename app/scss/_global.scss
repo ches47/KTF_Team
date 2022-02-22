@@ -28,14 +28,15 @@ li {
 }
 
 body {
-    font-size: 114px;
+    min-width: 360px;
+    overflow-x: hidden;
     font-family: 'Stolzl-Book', sans-serif; 
     line-height: 18px;
     outline: none;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1430px;
     margin: 0 auto;
     padding: 0 15px;
 }
