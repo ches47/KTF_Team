@@ -1,5 +1,109 @@
-.footer__inner {
-    font-size: 26px;   
-    color: red;
-    padding-top: 40px;      
+.footer {
+    background: $dark-text;  
+    padding-top: 60px;  
 }
+
+.footer__inner{
+    display: block;
+    font-size: 26px;   
+    padding-top: 40px;   
+    &-list,
+    &-list-second {
+       
+        p {
+            font-weight: bold;
+            font-size: 21px;  
+            color: #fff;
+            line-height: 2;
+            padding-bottom: 60px;
+        }
+        .footer__list-menu {
+            padding-left: 40px;
+            position: relative;
+            min-width: 350px;
+            width: 500px;
+            &:nth-child(1) {
+                padding-left: 0;
+            }
+            a {
+                color: #fff;   
+                padding-bottom: 60px;   
+                font-weight: 200;  
+                &:hover {
+                    color: $blue-text;
+                    font-size: 27px;
+                }       
+                span {
+                    content: '';
+                    top: 7px;
+                    left: 4px;
+                    position: absolute;
+                    width: 14px;
+                    height: 1px;
+                    background-color: #fff;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $blue-text;
+                        width: 19px;
+                    }
+                }
+            }
+
+        }
+        .footer__list-arrow {
+            a {
+                &::after { 
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    right: 190px;
+                    background-image: url('../img/footer/down_arrow.svg');
+                    background-repeat: no-repeat;
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    li.footer__list-menu.footer__list-second{
+        padding-left: 40px;
+    }
+    .footer__inner-list-second {
+        padding-top: 140px;
+        span {
+            content: '';
+            top: 7px;
+            left: 4px;
+            position: absolute;
+            width: 14px;
+            height: 1px;
+            background-color: #fff;
+            cursor: pointer;
+            &::after { 
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 310px;
+                background-image: url('../img/footer/down_arrow.svg');
+                background-repeat: no-repeat;
+                padding-left: 20px;
+                padding-bottom: 10px;
+            }
+            &:hover {
+                background-color: $blue-text;
+                width: 19px;
+            }
+            
+        }
+        
+    }
+}
+
+@media (min-width : 768px) {
+    .footer__inner{
+        display: flex;
+    }
+    .footer__inner-list  p {
+        font-size: 32px;
+    }
+} 
