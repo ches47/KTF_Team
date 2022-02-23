@@ -17,7 +17,7 @@
 }
 .pecification__inner{
     position: relative;
-    padding-top: 79px;
+    padding: 79px 0px 20px;
     z-index: 3;   
 }
 .specification__title{
@@ -34,6 +34,7 @@
     display: none;
 }
 .specification__btn-box{
+    margin-bottom: 31px;
     .specification__btn-link{
         & + .specification__btn-link{
             margin-top: 17px;
@@ -42,4 +43,23 @@
             display: block;
         }
     }  
+}
+.specification__bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .specification__social-icon{
+        .specification__social-list{
+            display: inline-block;
+            & + .specification__social-list{
+                margin-left: 22px;
+            }
+            .specification__social-link{
+                img{
+                    width: 19px;
+                    height: 15px;
+                }
+            }
+        }
+    }
 }
