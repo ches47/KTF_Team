@@ -1,6 +1,125 @@
-.head {
-    padding-top: 100px;
-    color: green;
-    font-size: 50px;
-    text-align: center;
+.header{
+    background-color: #000;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 70px;
+    }
+    &__burger-menu{
+        width: 27px;
+        height: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+            height: 2px;
+            background-color: #fff;
+            border-radius: 1px;
+        }
+        .header__burger-line1{
+            width: 22px;
+        }
+        .header__burger-line2{
+            width: 17px;
+        }
+    }
+    .header__services,
+    .header__left-content,
+    .header__right-content{
+        display: none;
+    }
+    &__languages{
+        padding-right: 9px;
+        span{
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url("../img/arrow-lang.svg");
+                width: 7px;
+                height: 4px;
+                top: 6px;
+                right: -9px;
+            }
+        }
+    }
+    .header__contacts{
+        display: none;
+        position: absolute;
+        bottom: -20px;
+        font-size: 13px;
+        left: 20%;
+        
+        a{
+            text-decoration: underline;
+        }
+    } 
+}
+
+@media (min-width: 1180px) {
+    .header__burger-menu{
+        display: none;
+    }
+    .header__inner{
+        .header__left-content{
+            display: flex;
+            align-items: center;
+            .header__services{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                background-color: $orange;
+                height: 70px;
+                width: 152px;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-image: url("../img/write-icon.svg");
+                    top: 28px;
+                    left: 26px;
+                    height: 14px;   
+                    width: 14px;
+                }
+                a{
+                    color: #fff;
+                }
+            }
+            .header__left-text{
+                margin-left: 60px;
+                li{
+                    display: inline-block;
+                    & + li{
+                        margin-left: 36px;
+                    }
+                    a{
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .header__right-content{
+            display: block;
+            .header__right-list{
+                li{
+                    display: inline-block;
+                    & + li{
+                        margin-left: 20px;
+                    }
+                    a{
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }  
 }
