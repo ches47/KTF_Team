@@ -2,6 +2,7 @@
     font-family: 'Stolzl-Bold', sans-serif;
     src: url('../ktc-team/app/fonts/Stolzl-Bold.woff') format('woff'); 
     src: url('../ktc-team/app/fonts/Stolzl-Bold.woff2') format('woff2'); 
+    font-weight: 700;
     font-display: swap; 
 } 
 @font-face { 
@@ -14,16 +15,18 @@
     font-family: 'Stolzl-Medium', sans-serif;
     src: url('../ktc-team/app/fonts/Stolzl-Medium.woff') format('woff'); 
     src: url('../ktc-team/app/fonts/Stolzl-Medium.woff2') format('woff2'); 
+    font-weight: 500;
     font-display: swap; 
 } 
 @font-face { 
     font-family: 'Stolzl-Regular', sans-serif;
     src: url('../ktc-team/app/fonts/Stolzl-Regular.woff') format('woff'); 
     src: url('../ktc-team/app/fonts/Stolzl-Regular.woff2') format('woff2'); 
+    font-weight: 400;
     font-display: swap; 
 } 
  
 $Stolzl-Bold: 'Stolzl-Bold', sans-serif;  
-// $Stolzl-Book: 'Stolzl-Book', sans-serif;  
-// $Stolzl-Medium: 'Stolzl-Medium', sans-serif;  
-// $Stolzl-Regular: 'Stolzl-Regular', sans-serif;
+$Stolzl-Book: 'Stolzl-Book', sans-serif;  
+$Stolzl-Medium: 'Stolzl-Medium', sans-serif;  
+$Stolzl-Regular: 'Stolzl-Regular', sans-serif;
