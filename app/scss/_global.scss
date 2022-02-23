@@ -20,6 +20,15 @@ body {
     position: relative;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+
 ul,
 li {
     margin: 0;
@@ -41,4 +50,47 @@ body {
     max-width: 1430px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.main-btn-link{
+    position: relative;
+    &::before{
+        content: '';
+        background-image: url("../img/arrow-btn.svg");
+        position: absolute;
+        top: 16px;
+        right: 25px;
+        width: 22px;
+        height: 22px;
+        z-index: 2;
+    }
+    .main-btn{
+        position: relative;
+        width: 240px;
+        height: 52px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 12px;
+        line-height: 27px;
+        font-weight: 500;
+        z-index: 1;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: $blue-text;
+            z-index: -1;
+            transition: transform 0.5s ease-in;
+            transform: scaleX(0);
+            transform-origin: left; 
+        }
+        &:hover::before{
+            transform: scaleX(1);
+        }
+    }
 }
