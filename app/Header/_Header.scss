@@ -25,6 +25,64 @@
             width: 17px;
         }
     }
+    .menu--active{
+        display: block;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        min-width: 325px;
+        .header__menu{   
+            padding: 0;
+            .header__menu-services{
+                position: relative;
+                &::before{
+                    content: '';
+                    background-image: url("../img/arrow-lang.svg");
+                    position: absolute;
+                    top: 16px;
+                    right: 15px;
+                    width: 7px;
+                    height: 4px;
+                }
+            }
+            .header__menu-list{
+                // list-style-type: decimal-leading-zero;
+                padding: 11px 46px 11px 19px;
+                background: $bgLink-menu;
+                border: solid 2px #fff;
+                border-left: none;
+                border-right: none;
+                cursor: pointer;
+                color: $menu-text;
+                font-size: 13px;
+                font-weight: 400;
+                transition: background .5s ease;
+                // list-style-position: inside;
+                &:hover{
+                    background: $orange;
+                    color: #fff;
+                    a{
+                        color: #fff;
+                    }
+                    span{
+                        color: #fff;
+                    }
+                }
+                a{
+                    color: $menu-text;
+                    font-size: 13px;
+                    font-weight: 400;
+                    width: 100%;
+                }
+                span{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
     .header__services,
     .header__left-content,
     .header__right-content{
