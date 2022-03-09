@@ -79,3 +79,109 @@
         }
     }
 }
+
+.sphere__top-content{
+    padding-top: 80px;    
+}
+.sphere__title{
+    color: $black-text;
+    font-weight: 400;
+    font-size: 16px;
+}
+.sphere__sub-title{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: $black-text;
+    span{
+        color: $blue-text;
+    }
+}
+.sphere__content-right{
+    margin-top: 31px;
+    position: relative;
+    &::before{
+        content: '';
+        width: 89px;
+        height: 2px;
+        background-color: $grey-text;
+        position: absolute;
+    }
+}
+.sphere__text{
+    color: $grey-text;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    padding-top: 21px;
+}
+.sphere__btn{
+    display: none;
+    position: relative;
+    margin-top: 21px;
+        width: 240px;
+        height: 52px;
+        background-color: transparent;
+        border: 1px solid $orange;
+        text-transform: uppercase;
+        color: $orange;
+        font-size: 12px;
+        line-height: 27px;
+        font-weight: 500;
+        z-index: 1;
+        &::after{
+            content: '';
+            background-image: url("../img/home_page/sphere-orange.svg");
+            position: absolute;
+            top: 16px;
+            right: 25px;
+            width: 22px;
+            height: 17px;
+            z-index: 2;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(254, 100, 0, .5);
+            z-index: -1;
+            transition: transform 0.5s ease-in;
+            transform: scaleX(0);
+            transform-origin: right; 
+        }
+        &:hover::before{
+            transform: scaleX(1);
+            transform-origin: left; 
+        }
+}
+.sphere__item{
+    width: 100%;
+    min-height: 339px;
+    background-image: url('../img/home_page/Mask1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 29px;
+    padding-top: 225px;
+    & + .sphere__item{
+        margin-top: 20px;
+    }
+}
+.sphere__item-text{
+    margin-top: 49px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media (min-width : 992px){
+    .sphere__top-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
