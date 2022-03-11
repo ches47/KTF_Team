@@ -892,8 +892,57 @@
         }
     }
 }
-
+// home-form end
+// seo start
 .seo {
-    padding-top: 700px;
-    background-color: blue;
+    padding-top: 80px;
+    background-color: $dark-text;
+}
+.seo__content{
+    padding: 0px 35px;
+    max-height: 340px;
+    overflow-x: hidden;
+}
+.seo__content-title{
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #fff;
+}
+.seo__content-text{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-top: 36px;
+    color: #fff;
+}
+.seo__slider{
+    margin-top: 80px;
+}
+.seo__slider-item{
+    background-image: url('../img/home_page/seo/board.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 291px;
+}
+@media (min-width: 1200px){
+    .seo {
+        padding: 300px 0 150px;
+    }
+    .seo__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .seo__content,
+    .seo__slider{
+        width: 50%;
+    }
+    .seo__slider{
+        margin-top: 0;
+        margin-left: 50px;
+    }
+    .seo__slider-item{
+        height: 100%;
+    }
 }
