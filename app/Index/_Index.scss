@@ -402,11 +402,11 @@
             bottom: 0;
         }
     }
-    .company__video{
+    .company__video {
         left: 92px;
         width: 227px;
         height: 102px;
-        img{
+        img {
             width: 151px;
             height: 55px;
             left: 49px;
@@ -417,22 +417,22 @@
         width: 80%;
     }
 }
-@media (min-width: 1200px){
-    .company__desktop-content{
+@media (min-width: 1200px) {
+    .company__desktop-content {
         position: relative;
     }
-    .company__sub-title{
+    .company__sub-title {
         font-size: 32px;
         line-height: 42px;
         font-weight: 700;
     }
-    .company__text{
+    .company__text {
         max-width: 441px;
     }
-    .company__director{
+    .company__director {
         display: block;
     }
-    .company__btn-link{
+    .company__btn-link {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -451,11 +451,11 @@
             bottom: 0;
         }
     }
-    .company__video{
+    .company__video {
         left: 166px;
         width: 227px;
         height: 102px;
-        img{
+        img {
             width: 151px;
             height: 55px;
             left: 49px;
@@ -467,11 +467,11 @@
         height: 449px;
     }
 }
-@media (min-width: 1400px){
-    .company__desktop-content{
+@media (min-width: 1400px) {
+    .company__desktop-content {
         width: 47%;
     }
-    .company__text{
+    .company__text {
         font-size: 16px;
     }
     .company__slider {
@@ -488,29 +488,28 @@
             bottom: 0;
         }
     }
-    .company__video{
+    .company__video {
         left: 193px;
-    }  
+    }
 }
 // company end
 
 // cases start
-.cases__top{
+.cases__top {
     margin-top: 80px;
     padding: 80px 0px 40px;
-    background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #f8f8f8 0%, rgba(255, 255, 255, 0) 100%);
 }
-.cases__top-title{
+.cases__top-title {
     font-size: 21px;
     font-weight: 700;
     line-height: 31px;
     max-width: 280px;
-    span{
+    span {
         color: $blue-text;
     }
 }
-.cases__btn{
-    
+.cases__btn {
     position: relative;
     width: 270px;
     height: 52px;
@@ -550,17 +549,17 @@
         transform-origin: left;
     }
 }
-.cases__bottom-content{
+.cases__bottom-content {
     background-color: $dark-text;
     padding: 50px 0px;
 }
-.cases__number{
+.cases__number {
     color: #868686;
     font-size: 14px;
     line-height: 27px;
     font-weight: 400;
 }
-.cases__text{
+.cases__text {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -569,18 +568,18 @@
     margin-top: 18px;
 }
 .cases__sub-text,
-.cases__item-inner{
+.cases__item-inner {
     display: none;
 }
-.cases__btn-box{
-    background-image: url('../img/cases/casesTir.jpeg');
+.cases__btn-box {
+    background-image: url("../img/cases/casesTir.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 295px;
     position: relative;
 }
-.cases__box-white{
+.cases__box-white {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -588,7 +587,7 @@
     height: 111px;
     background-color: #fff;
 }
-.cases__bottom-btn{
+.cases__bottom-btn {
     margin-top: 40px;
     position: relative;
     width: 240px;
@@ -619,7 +618,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(31, 174, 233, .5);
+        background-color: rgba(31, 174, 233, 0.5);
         z-index: -1;
         transition: transform 0.5s ease-in;
         transform: scaleX(0);
@@ -630,84 +629,84 @@
         transform-origin: left;
     }
 }
-@media (min-width: 500px){
-    .cases__top{
+@media (min-width: 500px) {
+    .cases__top {
         text-align: center;
     }
-    .cases__top-title{
-        margin: 0 auto; 
+    .cases__top-title {
+        margin: 0 auto;
     }
-    .cases__text{
+    .cases__text {
         max-width: 100%;
     }
 }
-@media (min-width: 765px){
-    .cases__bottom{
+@media (min-width: 765px) {
+    .cases__bottom {
         display: flex;
     }
-    .cases__bottom-content{
+    .cases__bottom-content {
         width: 50%;
     }
-    .cases__sub-text{
+    .cases__sub-text {
         display: block;
         font-size: 14px;
         line-height: 27px;
         font-weight: 400;
         color: #fff;
     }
-    .cases__btn-box{
+    .cases__btn-box {
         width: 50%;
     }
 }
-@media (min-width: 1200px){
-    .cases__top-inner{
+@media (min-width: 1200px) {
+    .cases__top-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .cases__top-title{
+    .cases__top-title {
         margin: 0;
         max-width: 100%;
         font-size: 32px;
         line-height: 42px;
         font-weight: 700;
     }
-    .cases__bottom{
+    .cases__bottom {
         min-height: 607px;
         padding-top: 76px;
     }
-    .cases__number{
+    .cases__number {
         font-size: 14px;
         line-height: 27px;
         font-weight: 400;
     }
-    .cases__text{
+    .cases__text {
         font-size: 24px;
         line-height: 33px;
         font-weight: 700;
     }
-    .cases__item-inner{
+    .cases__item-inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-right: 75px;
         margin-top: 57px;
     }
-    .cases__item{
+    .cases__item {
         max-width: 50%;
-        .cases__item-number{
+        .cases__item-number {
             font-size: 50px;
             line-height: 33px;
             font-weight: 700;
             color: $blue-text;
         }
-        .cases__item-title{
+        .cases__item-title {
             font-size: 14px;
             line-height: 27px;
             font-weight: 400;
             color: #fff;
         }
-        .cases__item-text{
+        .cases__item-text {
             font-size: 12px;
             line-height: 21px;
             font-weight: 400;
@@ -716,4 +715,185 @@
             max-width: 224px;
         }
     }
+}
+// cases finish
+// home-form start
+.home-form {
+    padding-top: 100px;
+}
+.home-form__wrapper {
+    background-color: #fafafa;
+}
+.home-form__inner {
+    padding: 80px 0px;
+}
+.home-form__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    max-width: 270px;
+    span {
+        color: $blue-text;
+    }
+}
+.home-form__text {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: $grey-text;
+    margin-top: 24px;
+}
+.home-form__btn-link {
+    margin-top: 23px;
+}
+.home-form__btn {
+    position: relative;
+    width: 240px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid $blue-text;
+    text-transform: uppercase;
+    color: $blue-text;
+    font-size: 12px;
+    line-height: 27px;
+    font-weight: 500;
+    z-index: 1;
+    &::after {
+        content: "";
+        background-image: url("../img/cases/arrowBlue.png");
+        position: absolute;
+        top: 16px;
+        right: 25px;
+        width: 22px;
+        height: 22px;
+        z-index: 2;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(31, 174, 233, 0.5);
+        z-index: -1;
+        transition: transform 0.5s ease-in;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+.home-form__social {
+    margin-top: 30px;
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 27px;
+        }
+    }
+}
+.home-form__desktop-right {
+    display: none;
+}
+@media (min-width: 560px) {
+    .home-form__inner {
+        text-align: center;
+    }
+    .home-form__title {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px) {
+    .home-form {
+        padding-top: 300px;
+        position: relative;
+    }
+    .home-form__wrapper {
+        background-color: transparent;
+    }
+    .home-form__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1080px;
+        text-align: left;
+        padding: 50px 88px;
+        background-color: #fafafa;
+        max-width: 1080px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -50%;
+        left: 0;
+        right: 0;
+    }
+    .home-form__title {
+        margin: 0;
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
+        max-width: 100%;
+    }
+    .home-form__text {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        max-width: 517px;
+    }
+    .home-form__btn-link {
+        display: none;
+    }
+    .home-form__desktop-right {
+        display: block;
+    }
+    .home-form__btn-link--active {
+        .home-form__btn--active {
+            position: relative;
+            width: 240px;
+            height: 52px;
+            background-color: transparent;
+            border: 1px solid $blue-text;
+            text-transform: uppercase;
+            color: $blue-text;
+            font-size: 12px;
+            line-height: 27px;
+            font-weight: 500;
+            z-index: 1;
+            &::after {
+                content: "";
+                background-image: url("../img/cases/arrowBlue.png");
+                position: absolute;
+                top: 16px;
+                right: 25px;
+                width: 22px;
+                height: 22px;
+                z-index: 2;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(31, 174, 233, 0.5);
+                z-index: -1;
+                transition: transform 0.5s ease-in;
+                transform: scaleX(0);
+                transform-origin: right;
+            }
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+    }
+}
+
+.seo {
+    padding-top: 700px;
+    background-color: blue;
 }
