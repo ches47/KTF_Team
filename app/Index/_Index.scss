@@ -1066,3 +1066,135 @@
         }
     }
 }
+// cases finish
+// blog start
+.blog__inner{
+    padding: 124px 0px;
+}
+.blog__mini-title{
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.blog__text{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    span{
+        color: $blue-text;
+    }
+}
+.blog__btn-link{
+    margin: 25px 0px 40px;
+    .blog__btn{
+        position: relative;
+        width: 240px;
+        height: 52px;
+        background-color: transparent;
+        border: 1px solid $black-text;
+        text-transform: uppercase;
+        color: $black-text;
+        font-size: 12px;
+        line-height: 27px;
+        font-weight: 500;
+        z-index: 1;
+        &::after{
+            content: '';
+            background-image: url("../img/home_page/section-company/company-arrow.svg");
+            position: absolute;
+            top: 16px;
+            right: 25px;
+            width: 22px;
+            height: 22px;
+            z-index: 2;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(72, 72, 72, .5);
+            z-index: -1;
+            transition: transform 0.5s ease-in;
+            transform: scaleX(0);
+            transform-origin: right; 
+        }
+        &:hover::before{
+            transform: scaleX(1);
+            transform-origin: left; 
+        }
+    }
+}
+.blog__item{
+    min-height: 248px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    & + .blog__item{
+        margin-top: 140px;
+    }
+}
+.blog__item-box{
+    padding: 30px 0px 30px 17px;
+    max-width: 210px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -40%;
+}
+.blog__item-date{
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #a8a8a8;
+}
+.blog__item-text{
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 500;
+}
+@media (min-width: 796px){
+    .blog__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .blog__mini-title{
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+    }
+    .blog__text{
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
+        max-width: 549px;
+    }
+}
+
+@media (min-width: 1200px){
+    .blog__item-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog__item{
+        min-width: 350px;
+        & + .blog__item{
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 1400px){
+    .blog__item{
+        min-width: 400px;
+    }
+}  
+
+
+
+
+
