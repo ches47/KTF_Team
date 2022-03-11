@@ -490,6 +490,230 @@
     }
     .company__video{
         left: 193px;
+    }  
+}
+// company end
+
+// cases start
+.cases__top{
+    margin-top: 80px;
+    padding: 80px 0px 40px;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(255, 255, 255, 0) 100%);
+}
+.cases__top-title{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 31px;
+    max-width: 280px;
+    span{
+        color: $blue-text;
     }
+}
+.cases__btn{
     
+    position: relative;
+    width: 270px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid $black-text;
+    text-transform: uppercase;
+    color: $black-text;
+    font-size: 12px;
+    line-height: 27px;
+    font-weight: 500;
+    z-index: 1;
+    &::after {
+        content: "";
+        background-image: url("../img/home_page/section-company/company-arrow.svg");
+        position: absolute;
+        top: 14px;
+        right: 25px;
+        width: 22px;
+        height: 22px;
+        z-index: 2;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(72, 72, 72, 0.5);
+        z-index: -1;
+        transition: transform 0.5s ease-in;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+.cases__bottom-content{
+    background-color: $dark-text;
+    padding: 50px 0px;
+}
+.cases__number{
+    color: #868686;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+}
+.cases__text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 255px;
+    margin-top: 18px;
+}
+.cases__sub-text,
+.cases__item-inner{
+    display: none;
+}
+.cases__btn-box{
+    background-image: url('../img/cases/casesTir.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 295px;
+    position: relative;
+}
+.cases__box-white{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 272px;
+    height: 111px;
+    background-color: #fff;
+}
+.cases__bottom-btn{
+    margin-top: 40px;
+    position: relative;
+    width: 240px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid $blue-text;
+    text-transform: uppercase;
+    color: $blue-text;
+    font-size: 12px;
+    line-height: 27px;
+    font-weight: 500;
+    z-index: 1;
+    margin-left: 15px;
+    &::after {
+        content: "";
+        background-image: url("../img/cases/arrowBlue.png");
+        position: absolute;
+        top: 14px;
+        right: 25px;
+        width: 22px;
+        height: 22px;
+        z-index: 2;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(31, 174, 233, .5);
+        z-index: -1;
+        transition: transform 0.5s ease-in;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+@media (min-width: 500px){
+    .cases__top{
+        text-align: center;
+    }
+    .cases__top-title{
+        margin: 0 auto; 
+    }
+    .cases__text{
+        max-width: 100%;
+    }
+}
+@media (min-width: 765px){
+    .cases__bottom{
+        display: flex;
+    }
+    .cases__bottom-content{
+        width: 50%;
+    }
+    .cases__sub-text{
+        display: block;
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .cases__btn-box{
+        width: 50%;
+    }
+}
+@media (min-width: 1200px){
+    .cases__top-inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cases__top-title{
+        margin: 0;
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+    .cases__bottom{
+        min-height: 607px;
+        padding-top: 76px;
+    }
+    .cases__number{
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+    .cases__text{
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+    .cases__item-inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 75px;
+        margin-top: 57px;
+    }
+    .cases__item{
+        max-width: 50%;
+        .cases__item-number{
+            font-size: 50px;
+            line-height: 33px;
+            font-weight: 700;
+            color: $blue-text;
+        }
+        .cases__item-title{
+            font-size: 14px;
+            line-height: 27px;
+            font-weight: 400;
+            color: #fff;
+        }
+        .cases__item-text{
+            font-size: 12px;
+            line-height: 21px;
+            font-weight: 400;
+            color: $more-light-grey;
+            margin-top: 10px;
+            max-width: 224px;
+        }
+    }
 }
