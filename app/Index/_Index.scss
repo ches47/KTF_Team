@@ -268,18 +268,18 @@
 
 // sphere end
 
-// company start
+// community start
 
-.company__inner {
+.community__inner {
     padding-top: 60px;
 }
-.since {
+.community-since {
     font-size: 14px;
     font-weight: 400;
     line-height: 50px;
     color: $black-text;
 }
-.company__sub-title {
+.community__sub-title {
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -288,7 +288,7 @@
         color: $blue-text;
     }
 }
-.company__slider {
+.community__slider {
     position: relative;
     width: 290px;
     height: 339px;
@@ -306,7 +306,7 @@
         bottom: 0;
     }
 }
-.company__video {
+.community__video {
     position: absolute;
     background-color: $blue-text;
     width: 183px;
@@ -319,7 +319,7 @@
         bottom: 14px;
     }
 }
-.company__text {
+.community__text {
     font-size: 14px;
     line-height: 23px;
     font-weight: 700;
@@ -329,34 +329,34 @@
         color: $blue-text;
     }
 }
-.company__director {
+.community__director {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
 }
-.company__director-box {
+.community__director-box {
     span {
         display: block;
     }
     font-style: 12px;
     line-height: 30px;
 }
-.company__director-name {
+.community__director-name {
     font-weight: 500;
 }
-.company__line {
+.community__line {
     width: 26px;
     height: 2px;
     background-color: rgba(215, 215, 215, 1);
 }
-.company__director-post {
+.community__director-post {
     font-weight: 300;
 }
-.company__btn-link {
+.community__btn-link {
     margin-top: 30px;
 }
-.company__btn {
+.community__btn {
     position: relative;
     width: 240px;
     height: 52px;
@@ -396,22 +396,22 @@
         transform-origin: left;
     }
 }
-.company__inner-desktop {
+.community__inner-desktop {
     display: none;
 }
 @media (min-width: 992px) {
-    .company__inner {
+    .community__inner {
         display: none;
     }
-    .company__inner-desktop {
+    .community__inner-desktop {
         display: flex;
         justify-content: space-between;
         padding-top: 60px;
     }
-    .company__desktop-content {
+    .community__desktop-content {
         width: 50%;
     }
-    .company__slider {
+    .community__slider {
         width: 50%;
         height: 449px;
         position: relative;
@@ -425,7 +425,7 @@
             bottom: 0;
         }
     }
-    .company__video {
+    .community__video {
         left: 92px;
         width: 227px;
         height: 102px;
@@ -436,31 +436,31 @@
             bottom: 27px;
         }
     }
-    .company__slider-img {
+    .community__slider-img {
         width: 80%;
     }
 }
 @media (min-width: 1200px) {
-    .company__desktop-content {
+    .community__desktop-content {
         position: relative;
     }
-    .company__sub-title {
+    .community__sub-title {
         font-size: 32px;
         line-height: 42px;
         font-weight: 700;
     }
-    .company__text {
+    .community__text {
         max-width: 441px;
     }
-    .company__director {
+    .community__director {
         display: block;
     }
-    .company__btn-link {
+    .community__btn-link {
         position: absolute;
         right: 0;
         bottom: 0;
     }
-    .company__slider {
+    .community__slider {
         width: 50%;
         height: 487px;
         position: relative;
@@ -474,7 +474,7 @@
             bottom: 0;
         }
     }
-    .company__video {
+    .community__video {
         left: 166px;
         width: 227px;
         height: 102px;
@@ -485,19 +485,19 @@
             bottom: 27px;
         }
     }
-    .company__slider-img {
+    .community__slider-img {
         width: 70%;
         height: 449px;
     }
 }
 @media (min-width: 1400px) {
-    .company__desktop-content {
+    .community__desktop-content {
         width: 47%;
     }
-    .company__text {
+    .community__text {
         font-size: 16px;
     }
-    .company__slider {
+    .community__slider {
         width: 50%;
         height: 487px;
         position: relative;
@@ -511,11 +511,11 @@
             bottom: 0;
         }
     }
-    .company__video {
+    .community__video {
         left: 193px;
     }
 }
-// company end
+// community end
 
 // cases start
 .cases__top {
