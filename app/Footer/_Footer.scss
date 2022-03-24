@@ -48,6 +48,7 @@
     &-list-second {
        font-size: 17px;
         p {
+            
             font-weight: bold;
             font-size: 18px;  
             color: #fff;
@@ -110,7 +111,7 @@
     .footer__inner-list-second {
         padding-top: 0px;
         // border-bottom: 2px solid $shadow-grey;
-        span {
+        .arrow {
             content: '';
             top: 7px;
             left: 4px;
@@ -142,6 +143,7 @@
         .footer__list-contact {
 
             p {
+                color: #fff;
                 font-weight: 600;
                 padding-top: 5px;
                 padding-bottom: 40px;
@@ -245,7 +247,7 @@
         padding-right: 33px;
     }
     .footer__inner-contact {
-        padding-top: 50px;   
+        padding: 50px 0;   
     }
     .footer__inner .footer__inner-list-second {
         padding-bottom: 15px;

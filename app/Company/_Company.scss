@@ -13,7 +13,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(7,28,36,0.6);
+        background: rgba(7,28,36,0.7);
         z-index: 1;
     }
     &-about {
@@ -150,6 +150,7 @@
     &__info {
         padding-right: 150px;
         &-title{
+            color: #fff;
             line-height: 38px;
             font-weight: 700;
             max-width: 640px;
@@ -158,13 +159,21 @@
                 color: #1FAEE9;
             }
         }
-
+        &-img {
+            background-image: url('../img/company/ship.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            // min-height: 291px;
+            height: 600px;
+        }
     }
 }
 
 .service__list {
     max-width: 450px;
     ul.tasks {
+        color: #fff;
         li.tasks__list {
             display: flex;
             span.tasks-number {
@@ -198,6 +207,7 @@
                 }
                 .tasks__line {
                     margin-top: 30px;
+                    margin-bottom: 20px;
                     border-top: 1px solid $grey-text;
                     width: 100px;
                 }
@@ -268,12 +278,8 @@
     .company h4 {
         font-size: 25px;
     }
-    .significance__img,
-    .significance::before {
-        display: none;
-    }
     .service {
-        height: auto;
+        height: 1300px;
     }
     .service__info {
         padding-right: 0;
@@ -286,8 +292,10 @@
         font-size: 25px;
         text-align: center;
     }
-    .service__info-img img {
-        width: 100%;
+    .service__info-img {
+        width: 340px;   
+        height: 300px;
+        margin: auto;
     }
     .service__list {
         padding-top: 60px;
@@ -308,8 +316,17 @@
         margin-bottom: 30px;
     }
     .service__list ul.tasks li.tasks__list .tasks__block {
-        padding-bottom: 40px;
+        padding-bottom: 4px;
     }
+
+
+
+    .significance__img,
+    .significance::before
+    {
+        display: none;  
+    }
+
 }
 
 @media (min-width : 768px) {
@@ -319,28 +336,35 @@
     .company h4 {
         font-size: 32px;
     }
-    .significance__img,
-    .significance::before {
-        display: block;
+    .working__we-blocks .block__visual-number{
+        font-size: 21px;
+        margin-right: 50px;
     }
-    .significance::before {
-        top: 200px;
-        width: 460px;
-        height: 320px;
-    }
-    .significance__img {
-        width: 370px;
-        height: 250px;
-        top: 235px;
-        right: 154px;
-    }
+
+    // .significance__img,
+    // .significance::before {
+    //     display: block;
+    // }
+    // .significance::before {
+    //     top: 200px;
+    //     width: 460px;
+    //     height: 320px;
+    // }
+    // .significance__img {
+    //     width: 370px;
+    //     height: 250px;
+    //     top: 235px;
+    //     right: 154px;
+    // }
+
+
     .significance__inner {
         max-width: 565px;
     }
     .service__info-title {
         font-size: 30px;
     }
-   
+    
     .working__we {
         text-align: center;
     }
@@ -356,10 +380,46 @@
     .service__info {
         padding-right: 20px;
     }
-    
+    .service {
+        height: 1400px;
+    }
+    .service__info-img {
+        width: 440px;   
+        height: 400px;
+    }
+    .significance__img,
+    .significance::before
+    {
+        display: block;  
+    }
+    .significance__img {
+        width: 257px;
+        height: 253px;
+        top: 280px;
+        right: 123px;
+    }
+    .significance::before {
+        width: 318px;
+        height: 300px;
+        top: 256px;
+        
+    }
 }  
 
 @media (min-width: 1200px) {
+    .significance__img {
+        width: 570px;
+        height: 350px;
+        top: 220px;
+        right: 0px;
+    }
+    .significance::before {
+        top: 184px;
+        right: 0;
+        bottom: 0;
+        width: 528px;
+        height: 420px;
+    }
     .service {
         height: 800px;
     }
@@ -373,7 +433,6 @@
     .service__info {
         padding-right: 150px;
     }
-   
     .working__we-blocks {
         flex-wrap: nowrap;
     }
@@ -386,24 +445,24 @@
 }
 
 @media (min-width : 1400px) {
-    @media (min-width : 1400px) {
-        .significance__img {
-            position: absolute;
-            top: 210px;
-            right: 180px;
-            width: 570px;
-            height: 350px;
-            z-index: 2;
-        }
-        .significance::before {
-            top: 120px;
-            right: 0;
-            bottom: 0;
-            width: 628px;
-            height: 520px;
-        }
-        .working {
-            margin: 200px 0;
-        }
+    .significance__img {
+        top: 210px;
+        right: 218px;
+        width: 570px;
+        height: 350px;
+    }
+    .significance::before {
+        top: 120px;
+        right: 0;
+        bottom: 0;
+        width: 628px;
+        height: 520px;
+    }
+    .working {
+        margin: 200px 0;
+    }
+    .service__info-img { 
+    height: 600px;
+    width: 100%;
     }
 }
