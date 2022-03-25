@@ -209,6 +209,12 @@
         line-height: 42px;
         font-weight: 700;
     }
+    .contacts-content__sub-text{
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: 400;
+        max-width: 542px;
+    }
     .contacts__form{
         margin-top: 0;
         max-width: 591px;
@@ -220,8 +226,8 @@
             padding: 5px 0px;
         }
     }
-    .contacts__form-btn{
-        display: none;
-    }
+    // .contacts__form-btn{
+    //     display: none;
+    // }
 }
 
