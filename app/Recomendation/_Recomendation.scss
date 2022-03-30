@@ -122,3 +122,273 @@
         color: $grey-text;
     }
 }
+
+.advantage{
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    &__info {
+        padding-right: 150px;
+        &-title{
+            color: #000;
+            font-size: 28px;
+            line-height: 38px;
+            font-weight: 700;
+            max-width: 640px;
+            padding-bottom: 60px;
+            span {
+                color: #1FAEE9;
+            }
+        }
+        &-img {
+            background-image: url('../img/recomendation/worker.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+    }
+}
+
+.advantage__list {
+    max-width: 650px;
+    ul.tasks {
+        color: #000;
+        margin-top: 120px;
+        li.tasks__list {
+            display: flex;
+            span.tasks-number {
+                margin-top: 20px;
+                margin-right: 40px;
+                font-size: 50px;
+                font-weight: 700;
+                position: relative;
+                padding-right: 30px;
+                &::after {
+                    position: absolute;
+                    right: 13px;
+                    top: 16px;
+                    content: '';
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background: $blue-text;   
+                }
+            }
+            .tasks__block {
+                padding-bottom: 10px;
+                font-weight: 300;
+                line-height: 26px;
+                color: $grey-text;
+                font-size: 14px;
+                span.tasks__block-title {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                span.tasks__block-name {
+                    padding-left: 10px;
+                }
+                .tasks__line {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    border-top: 1px solid $grey-text;
+                    width: 100px;
+                }
+                .tasks-title {
+                    font-weight: 800;
+                    font-size: 17px;    
+                    color: #000;
+                    padding-bottom: 10px;   
+                }
+            }
+        }
+    }
+}
+
+.home-form {
+    padding-top: 100px;
+}
+.home-form__wrapper {
+    background-color: #fafafa;
+}
+.home-form__inner {
+    padding: 80px 0px;
+}
+.home-form__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    max-width: 270px;
+    span {
+        color: $blue-text;
+    }
+}
+.home-form__tel {
+    color: #000;
+    font-size: 21px;
+    line-height: 22px;
+    font-weight: 400;
+    &:hover {
+        color: #000;
+    }
+}
+.home-form__text {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: $grey-text;
+    margin-top: 24px;
+}
+.home-form__btn-link {
+    margin-top: 23px;
+}
+.home-form__btn {
+    position: relative;
+    width: 240px;
+    height: 52px;
+    background-color: transparent;
+    border: 1px solid $blue-text;
+    text-transform: uppercase;
+    color: $blue-text;
+    font-size: 12px;
+    line-height: 27px;
+    font-weight: 500;
+    z-index: 1;
+    &::after {
+        content: "";
+        background-image: url("../img/cases/arrowBlue.png");
+        position: absolute;
+        top: 16px;
+        right: 25px;
+        width: 22px;
+        height: 22px;
+        z-index: 2;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(31, 174, 233, 0.5);
+        z-index: -1;
+        transition: transform 0.5s ease-in;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+.home-form__social {
+    margin-top: 30px;
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 27px;
+        }
+    }
+}
+.home-form__desktop-right {
+    display: none;
+}
+
+@media (min-width: 560px) {
+    .home-form__inner {
+        text-align: center;
+    }
+    .home-form__title {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px) {
+    .home-form {
+        padding-top: 300px;
+        position: relative;
+    }
+    .home-form__wrapper {
+        background-color: transparent;
+    }
+    .home-form__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1080px;
+        text-align: left;
+        padding: 50px 88px;
+        background-color: #fafafa;
+        max-width: 1080px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -50%;
+        left: 0;
+        right: 0;
+    }
+    .home-form__title {
+        margin: 0;
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
+        max-width: 100%;
+    }
+    .home-form__text {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        max-width: 517px;
+    }
+
+    .home-form__btn-link {
+        display: none;
+    }
+    .home-form__desktop-right {
+        display: block;
+    }
+    .home-form__btn-link--active {
+        .home-form__btn--active {
+            position: relative;
+            width: 240px;
+            height: 52px;
+            background-color: transparent;
+            border: 1px solid $blue-text;
+            text-transform: uppercase;
+            color: $blue-text;
+            font-size: 12px;
+            line-height: 27px;
+            font-weight: 500;
+            z-index: 1;
+            &::after {
+                content: "";
+                background-image: url("../img/cases/arrowBlue.png");
+                position: absolute;
+                top: 16px;
+                right: 25px;
+                width: 22px;
+                height: 22px;
+                z-index: 2;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(31, 174, 233, 0.5);
+                z-index: -1;
+                transition: transform 0.5s ease-in;
+                transform: scaleX(0);
+                transform-origin: right;
+            }
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+    }
+}
