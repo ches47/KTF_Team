@@ -95,16 +95,6 @@
         span {
             text-transform: uppercase;
             color: #fff;
-            position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                background-image: url("../img/arrow-lang.svg");
-                width: 7px;
-                height: 4px;
-                top: 6px;
-                right: -9px;
-            }
         }
     }
     .header__contacts {
