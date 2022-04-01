@@ -20,6 +20,9 @@
     padding: 79px 0px 20px;
     z-index: 3;
 }
+.specification__contacts{
+    display: none;
+}
 .specification__title {
     font-size: 20px;
     line-height: 28px;
@@ -67,6 +70,7 @@
 @media (min-width: 360px) {
     .specification__btn-box {
         flex-wrap: wrap;
+        max-width: 456px;
     }
     .specification__btn-box .specification__btn-link+.specification__btn-link {
         margin-left: 0;
@@ -75,6 +79,26 @@
 }
 @media (min-width: 768px) {
     .pecification__inner {
+        position: relative;
+        .specification__contacts{
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 0;
+            .specification__contacts-list{
+                margin-top: 17px;
+                & + .specification__contacts-list{
+                    margin-left: 60px;
+                }
+            }
+            .specification__contacts-link{
+                color: #fff;
+                font-size: 13px;
+                line-height: 27px;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
         .specification__title {
             font-size: 50px;
             line-height: 60px;
@@ -92,8 +116,8 @@
         .specification__btn-box {
             margin: 31px 0;
             display: flex;
-            .specification__btn-link {
-                display: block;
+            max-width: 100%;
+            .specification__btn-link {    
                 & + .specification__btn-link {
                     // margin-top: 17px;
                     margin-left: 20px;
