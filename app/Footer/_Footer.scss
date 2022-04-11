@@ -33,18 +33,27 @@
         line-height: 26px;
     }
     .footer__logo--arrow {
+        background-image: url('../img/footer/MaskArrow.svg');
+        background-repeat: no-repeat;   
         position: absolute;
         top: 350px;
-        width: 70px;
+        width: 73px;
         cursor: pointer;
         &:hover {
+            background-image: url('../img/footer/MaskArrow2.svg');
+            transition: 0.5s;
             color: $blue-text;
         }
         .arrow-text {
-            padding-top: 21px;
+            color: #fff;
+            padding-top: 91px;
             padding-left: 5px;
             font-size: 18px;
             font-weight: 200;
+            &:hover {
+                transition: 0.5s;
+                color: $blue-text;
+            }
         }
     }
     &-list-first,
@@ -72,6 +81,7 @@
                 font-weight: 200;  
                 &:hover {
                     color: $blue-text;
+                    transition: 0.5s;
                     font-size: 18px;
                 }       
                 span {
@@ -86,6 +96,7 @@
                     &:hover {
                         background-color: $blue-text;
                         width: 19px;
+                        transition: 0.5s;
                     }
                 }
             }
@@ -136,6 +147,7 @@
             &:hover {
                 background-color: $blue-text;
                 width: 19px;
+                transition: 0.5s;
             }
             
         }
@@ -153,17 +165,39 @@
                 font-size: 23px;
             }
         }
-        .footer__list-telephone,
-        .footer__list-mail {
-            a {
+        .footer__list-telephone a {
+            background-image: url('../img/footer/phone.svg');
+                background-repeat: no-repeat;
+                background-position: 0px 4px;
                 text-decoration: underline;
-                padding-top: 10px;
-                padding-bottom: 40px;
+                margin-bottom: 22px;
+                // padding-top: 10px;
+                padding-left: 22px;
                 font-size: 16px;
                 font-weight: 200;   
                 color: #fff;
                 &:hover {
+                    background-image: url('../img/footer/phone2.svg');
                     color: $blue-text;
+                    transition: 0.5s;
+                }
+        }
+        .footer__list-mail {
+            a {
+                background-image: url('../img/footer/mail.svg');
+                background-repeat: no-repeat;
+                background-position: 0px 4px;
+                text-decoration: underline;
+                margin-bottom: 22px;
+                // padding-top: 10px;
+                padding-left: 22px;
+                font-size: 16px;
+                font-weight: 200;   
+                color: #fff;
+                &:hover {
+                    background-image: url('../img/footer/mail2.svg');
+                    color: $blue-text;
+                    transition: 0.5s;
                 }
             }
         }
@@ -175,10 +209,13 @@
                 display: flex;
                 justify-content: space-between;
                 margin-right: 30px;
-               
                 img {
-                    width: 21px;
-                    height: 21px;
+                    width: 24px;
+                    height: 19px;
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: 0.2s;
+                    }
                 }
             }
         }
@@ -235,9 +272,10 @@
        &:hover::before {
            transform: scaleX(1);
            transform-origin: left; 
+
        }
     }
-}
+}   
 
 .footer__inner-rights {
     border-top: 2px solid $grey-text;
@@ -269,9 +307,10 @@
         align-items: flex-start;
         padding-top: 60px;
         height: 300px;
+        width: 100%;  
     }
     .footer__inner .footer__logo--arrow {
-        top: 85px;
+        top: 90px;
         right: 40px;
     }
 
@@ -290,6 +329,9 @@
     .footer__inner .footer__inner-list-second {
         padding-top: 75px;
     }
+    .footer__inner--logo {
+        width: 360px;
+    }
     .footer__logo--text p {
         font-size: 16px;   
     }
@@ -297,7 +339,8 @@
         align-items: flex-end;  
     }
     .footer__inner .footer__logo--arrow {
-        top: 315px;
+        top: 235px;
+        right: 0;
     }
 } 
 
@@ -325,7 +368,7 @@
         align-items: flex-start;
     }
     .footer__inner .footer__logo--arrow {
-        top: 60px;
+        top: 90px;
         right: 10px;
     }
 }
@@ -345,8 +388,5 @@
         left: 210px;
     }
 }
-
-
-
 
 
