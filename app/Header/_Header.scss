@@ -92,9 +92,19 @@
     }
     &__languages {
         padding-right: 9px;
+        position: relative;
+        cursor: pointer;
         span {
             text-transform: uppercase;
             color: #fff;
+        }
+        .header__languages-ukr{
+            position: absolute;
+            display: none;
+            left: 0;
+        }
+        .header__languages-ukr--active{
+            display: block;
         }
     }
     .header__contacts {
